@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "Apple",
+        "image": "https://source.unsplash.com/400x400/?apple",
+        "description": "Crisp and juicy red apple, perfect for snacking or baking.",
+        "price": 150,
+        "category": "Pome"
+    },
+    {
+        "id": 2,
+        "name": "Banana",
+        "image": "https://source.unsplash.com/400x400/?banana",
+        "description": "Sweet and creamy banana, great for smoothies or as a quick energy boost.",
+        "price": 80,
+        "category": "Tropical"
+    },
+    {
+        "id": 3,
+        "name": "Orange",
+        "image": "https://source.unsplash.com/400x400/?orange",
+        "description": "Tangy and refreshing orange, rich in vitamin C.",
+        "price": 120,
+        "category": "Citrus"
+    },
+    {
+        "id": 4,
+        "name": "Strawberry",
+        "image": "https://source.unsplash.com/400x400/?strawberry",
+        "description": "Sweet and succulent strawberry, ideal for desserts or fresh eating.",
+        "price": 250,
+        "category": "Berry"
+    },
+    {
+        "id": 5,
+        "name": "Grape",
+        "image": "https://source.unsplash.com/400x400/?grape",
+        "description": "Juicy green grapes, perfect for snacking or making wine.",
+        "price": 180,
+        "category": "Berry"
+    },
+    {
+        "id": 6,
+        "name": "Pineapple",
+        "image": "https://source.unsplash.com/400x400/?pineapple",
+        "description": "Tropical pineapple with a sweet and tangy flavor, great for grilling or salads.",
+        "price": 200,
+        "category": "Tropical"
+    },
+    {
+        "id": 7,
+        "name": "Mango",
+        "image": "https://source.unsplash.com/400x400/?mango",
+        "description": "Sweet and juicy mango, known as the king of fruits.",
+        "price": 300,
+        "category": "Tropical"
+    },
+    {
+        "id": 8,
+        "name": "Kiwi",
+        "image": "https://source.unsplash.com/400x400/?kiwi",
+        "description": "Tart and refreshing kiwi, packed with vitamins.",
+        "price": 220,
+        "category": "Berry"
+    },
+    {
+        "id": 9,
+        "name": "Watermelon",
+        "image": "https://source.unsplash.com/400x400/?watermelon",
+        "description": "Large and juicy watermelon, perfect for summer picnics.",
+        "price": 100,
+        "category": "Melon"
+    },
+    {
+        "id": 10,
+        "name": "Peach",
+        "image": "https://source.unsplash.com/400x400/?peach",
+        "description": "Soft and sweet peach, delicious when ripe.",
+        "price": 160,
+        "category": "Stone Fruit"
+    },
+    {
+        "id": 11,
+        "name": "Lemon",
+        "image": "https://source.unsplash.com/400x400/?lemon",
+        "description": "Sour and tangy lemon, perfect for cooking and drinks.",
+        "price": 90,
+        "category": "Citrus"
+    },
+    {
+        "id": 12,
+        "name": "Lime",
+        "image": "https://source.unsplash.com/400x400/?lime",
+        "description": "Zesty lime, great for cocktails and Asian cuisine.",
+        "price": 85,
+        "category": "Citrus"
+    },
+    {
+        "id": 13,
+        "name": "Cherry",
+        "image": "https://source.unsplash.com/400x400/?cherry",
+        "description": "Sweet and tart cherry, ideal for pies and fresh eating.",
+        "price": 280,
+        "category": "Stone Fruit"
+    },
+    {
+        "id": 14,
+        "name": "Blueberry",
+        "image": "https://source.unsplash.com/400x400/?blueberry",
+        "description": "Small and sweet blueberries, packed with antioxidants.",
+        "price": 320,
+        "category": "Berry"
+    },
+    {
+        "id": 15,
+        "name": "Raspberry",
+        "image": "https://source.unsplash.com/400x400/?raspberry",
+        "description": "Delicate and tangy raspberry, perfect for jams and desserts.",
+        "price": 350,
+        "category": "Berry"
+    },
+    {
+        "id": 16,
+        "name": "Blackberry",
+        "image": "https://source.unsplash.com/400x400/?blackberry",
+        "description": "Juicy blackberry with a unique flavor, great for smoothies.",
+        "price": 290,
+        "category": "Berry"
+    },
+    {
+        "id": 17,
+        "name": "Pear",
+        "image": "https://source.unsplash.com/400x400/?pear",
+        "description": "Sweet and juicy pear, excellent for poaching or eating fresh.",
+        "price": 140,
+        "category": "Pome"
+    },
+    {
+        "id": 18,
+        "name": "Plum",
+        "image": "https://source.unsplash.com/400x400/?plum",
+        "description": "Sweet and tart plum, perfect for jams or fresh consumption.",
+        "price": 170,
+        "category": "Stone Fruit"
+    },
+    {
+        "id": 19,
+        "name": "Apricot",
+        "image": "https://source.unsplash.com/400x400/?apricot",
+        "description": "Velvety apricot with a sweet flavor, great for drying.",
+        "price": 260,
+        "category": "Stone Fruit"
+    },
+    {
+        "id": 20,
+        "name": "Fig",
+        "image": "https://source.unsplash.com/400x400/?fig",
+        "description": "Sweet and chewy fig, often used in Mediterranean cuisine.",
+        "price": 400,
+        "category": "Tropical"
+    }
+]
