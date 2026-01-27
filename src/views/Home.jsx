@@ -2,13 +2,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../index.css";
-
 import FruitIMG from "../assets/fruit-bg.png";
 import IconFresh from "../assets/features/fresh.png";
 import IconVariety from "../assets/features/fruit.png";
 import IconPrice from "../assets/features/affordable.png";
 import IconDelivery from "../assets/features/delivery.png";
-
+import Button from "../components/Button";
+import { useNavigate } from "react-router";
 import FeatureCard from "../components/FeatureSection";
 
 const FEATURES_CONFIG = [
@@ -39,11 +39,12 @@ const FEATURES_CONFIG = [
 ];
 
 function Home() {
+const navigate = useNavigate();
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      {/* Hero Section */}
       <main className="flex-grow bg-[#FFC4C4] px-6 py-16">
         <div className="max-w-7xl mx-auto">
 
@@ -54,17 +55,28 @@ function Home() {
               className="h-[400px] w-auto object-contain"
             />
 
-            <h1 className="text-4xl md:text-[45px] text-[#CD2C58] font-bold text-center max-w-lg">
-              Your One Best Shop for Fresh and Delicious Fruits
-            </h1>
+            <div className="flex flex-col items-center md:items-start text-center md:text-left gap-6 max-w-lg">
+              <h1 className="text-4xl md:text-[45px] text-[#CD2C58] font-bold">
+                Your One Best Shop for Fresh and Delicious Fruits
+              </h1>
+
+              <div className="flex gap-4">
+                <Button title={"Call Us"} variant="primary" size="medium" />
+                <Button 
+                title={"Explore Fruits"}
+                onClick={()=>{
+                  navigate("/Fruits")
+                }}
+                 variant="tertiary" 
+                 size="medium" />
+              </div>
+            </div>
           </div>
 
-          {/* Section Title */}
           <h2 className="text-2xl md:text-[28px] text-[#333] text-center font-bold mt-16 mb-10">
             Why should you buy fruits from us?
           </h2>
 
-          {/* Features */}
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-10">
             {FEATURES_CONFIG.map((feat, index) => (
               <FeatureCard
