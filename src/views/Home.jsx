@@ -57,7 +57,7 @@ const navigate = useNavigate();
 
             <div className="flex flex-col items-center md:items-start text-center md:text-left gap-6 max-w-lg">
               <h1 className="text-4xl md:text-[45px] text-[#CD2C58] font-bold">
-                Your One Best Shop for Fresh and Delicious Fruits
+                Fresh fruits straight from the farm to your doorstep.
               </h1>
 
               <div className="flex gap-4">
