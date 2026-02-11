@@ -8,10 +8,9 @@ function Fruits() {
     <div>
         <Navbar />
         <div className='min-h-screen'>
-          
-          <div className='flex flex-wrap justify-center'>
-          {FRUITS.map((fruit)=>{
-          return<FruitCard key = {fruit.id} {...fruit } />;
+          <div className='m-20 flex flex-wrap justify-center'>
+          {FRUITS.map((fruits)=>{
+          return<FruitCard key = {fruits.id} {...fruits } />;
         })}
           </div>
         </div>

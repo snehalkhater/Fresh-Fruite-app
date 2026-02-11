@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Apple",
-        "image": "https://source.unsplash.com/400x400/?apple&sig=1",
+        "image": "https://picsum.photos/seed/picsum/200/300",
         "description": "Crisp and juicy red apple, perfect for snacking or baking.",
         "price": 150,
         "category": "Pome",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "Banana",
-        "image": "https://source.unsplash.com/400x400/?banana&sig=2",
+        "image": "https://picsum.photos/seed/banana/200/300",
         "description": "Sweet and creamy bananas, ideal for smoothies and desserts.",
         "price": 60,
         "category": "Tropical",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "name": "Orange",
-        "image": "https://source.unsplash.com/400x400/?orange&sig=3",
+        "image": "https://picsum.photos/seed/orange/200/300",
         "description": "Juicy and tangy oranges, packed with vitamin C.",
         "price": 120,
         "category": "Citrus",
@@ -29,7 +29,7 @@
     {
         "id": 14,
         "name": "Blueberry",
-        "image": "https://source.unsplash.com/400x400/?blueberry",
+        "image": "https://picsum.photos/seed/blueberry/200/300",
         "description": "Small and sweet blueberries, packed with antioxidants.",
         "price": 320,
         "category": "Berry",
@@ -38,7 +38,7 @@
     {
         "id": 15,
         "name": "Raspberry",
-        "image": "https://source.unsplash.com/400x400/?raspberry",
+        "image": "https://picsum.photos/seed/raspberry/200/300",
         "description": "Delicate and tangy raspberry, perfect for jams and desserts.",
         "price": 350,
         "category": "Berry",
@@ -47,7 +47,7 @@
     {
         "id": 16,
         "name": "Blackberry",
-        "image": "https://source.unsplash.com/400x400/?blackberry",
+        "image": "https://picsum.photos/seed/blackberry/200/300",
         "description": "Juicy blackberry with a unique flavor, great for smoothies.",
         "price": 290,
         "category": "Berry",
@@ -56,7 +56,7 @@
     {
         "id": 17,
         "name": "Pear",
-        "image": "https://source.unsplash.com/400x400/?pear",
+        "image": "https://picsum.photos/seed/pear/200/300",
         "description": "Sweet and juicy pear, excellent for poaching or eating fresh.",
         "price": 140,
         "category": "Pome",
@@ -65,7 +65,7 @@
     {
         "id": 18,
         "name": "Plum",
-        "image": "https://source.unsplash.com/400x400/?plum",
+        "image": "https://picsum.photos/seed/plum/200/300",
         "description": "Sweet and tart plum, perfect for jams or fresh consumption.",
         "price": 170,
         "category": "Stone Fruit",
@@ -74,7 +74,7 @@
     {
         "id": 19,
         "name": "Apricot",
-        "image": "https://source.unsplash.com/400x400/?apricot",
+        "image": "https://picsum.photos/seed/apricot/200/300",
         "description": "Velvety apricot with a sweet flavor, great for drying.",
         "price": 260,
         "category": "Stone Fruit",
@@ -83,7 +83,7 @@
     {
         "id": 20,
         "name": "Fig",
-        "image": "https://source.unsplash.com/400x400/?fig",
+        "image": "https://picsum.photos/seed/fig/200/300",
         "description": "Sweet and chewy fig, often used in Mediterranean cuisine.",
         "price": 400,
         "category": "Tropical",
