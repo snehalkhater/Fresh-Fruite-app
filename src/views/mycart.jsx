@@ -1,41 +1,65 @@
-import React, { use, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { useState } from 'react';
+import CartFruitCard from '../components/CartFruitCard';
 
-function mycart() {
+function MyCart() {
     const [cartItems, setCartItems] = useState([]);
-
-    useEffect(() => {
-        const existingCart = JSON.parse(localStorage.getItem("cartItem")) || [];
-        setCartItems(existingCart);
-    }, []);
     const [totalPrice, setTotalPrice] = useState(0);
 
     useEffect(() => {
-        let price=0;
-        cartItems.map((item) => {
-            price += item.totalPrice;
-        })
-        setTotalPrice(price);
+        const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
+        setCartItems(existingCart);
+    }, []);
+
+    useEffect(() => {
+        let total = 0;
+        cartItems.forEach(item => {
+            total += item.price * item.quantity;
+        });
+        setTotalPrice(total);
     }, [cartItems]);
-  return (
-    <div>
-        <Navbar />
-        <div className='min-h-screen'>
-            {
-                cartItems.map((item) => {
-                    return (
-                        <div>{item.name}</div>
-                    )
-                }
-            )
-            }
-            <h1 className='text-3xl font-bold text-center mt-20'>My Cart</h1>
+
+    const removeItem = (id) => {
+        const updatedCart = cartItems.filter(item => item.id !== id);
+
+        setCartItems(updatedCart);
+        localStorage.setItem("cart", JSON.stringify(updatedCart));
+
+        window.dispatchEvent(new Event("cartUpdated"));
+    };
+
+    return (
+        <div>
+            <Navbar />
+
+            <h3 className='text-right px-10 mt-25 text-lg font-semibold'>
+                Total Amount : ₹ {totalPrice} /-
+            </h3>
+
+            <div className='min-h-screen'>
+                <div className='max-h-[700px] py-4 overflow-y-scroll'>
+
+                    {cartItems.length === 0 ? (
+                        <h2 className='text-center mt-20 text-2xl text-gray-500'>
+                            Your Cart is Empty 🛒
+                        </h2>
+                    ) : (
+                        cartItems.map(item => (
+                            <CartFruitCard
+                                key={item.id}
+                                {...item}
+                                removeItem={removeItem}
+                            />
+                        ))
+                    )}
+
+                </div>
+            </div>
+
+            <Footer />
         </div>
-        <Footer/>
-     </div>
-  )
+    )
 }
 
-export default mycart
+export default MyCart;

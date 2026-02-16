@@ -7,7 +7,7 @@ function Navbar({refreshCart}) {
   const [cartItems, setCartItems] = useState([]);
   
   useEffect(() => {
-    const existingCart = JSON.parse(localStorage.getItem("cartItem")) || [];
+    const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(existingCart);
   }, [refreshCart]);
 
@@ -19,10 +19,12 @@ function Navbar({refreshCart}) {
       flex items-center gap-3
       shadow-md shadow-red-200 z-50"
     >
-      <CherryIcon className="w-8 h-8 text-red-500" />
+     <Link to="/" className="flex items-center gap-2">
+       <CherryIcon className="w-8 h-8 text-red-500" />
       <h2 className="text-2xl font-bold text-gray-800">
         Fruitify
       </h2>
+     </Link>
 
 
       <Link  to="/mycart" className="ml-auto relative">

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 import FRUITS from "../data.json";
 import FruitCard from '../components/FruitCard';
 import  toast, {Toaster} from 'react-hot-toast';
@@ -8,23 +9,25 @@ import  toast, {Toaster} from 'react-hot-toast';
 function Fruits() {
  const [refreshCart, setRefreshCart] = useState(false);
 
-  function addtocart(item){
-    const existingCart = JSON.parse(localStorage.getItem("cartItem")) || [];
-    const itemIndex = existingCart.findIndex((cartItem) => cartItem.id === item.id);
+  function addtocart(item) {
+  const existingcart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    if (itemIndex !== -1) {
-      existingCart[itemIndex] = item;
-    } else {
-      existingCart.push(item);
-    }
+  const itemIndex = existingcart.findIndex(cartItem => cartItem.id === item.id);
 
-    localStorage.setItem("cartItem", JSON.stringify(existingCart));
-
-    setTimeout(() => {
-      setRefreshCart(!refreshCart);
-      toast.success("Item added to cart");
-    }, 100);
+  if (itemIndex !== -1) {
+    existingcart[itemIndex].quantity += 1;
+  } else {
+    existingcart.push({
+      ...item,
+      quantity: 1
+    });
   }
+
+  localStorage.setItem("cart", JSON.stringify(existingcart));
+
+  window.dispatchEvent(new Event("cartUpdated"));
+}
+
   return (
     <div>
         <Navbar refreshCart={refreshCart} />
