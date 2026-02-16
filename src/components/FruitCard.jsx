@@ -11,7 +11,9 @@ function FruitCard({
   description,
   price,
   category,
-  unit
+  unit,
+  addtocart,
+
 }) {
   const [quantity, setQuantity] = useState(1);
 
@@ -30,31 +32,49 @@ function FruitCard({
 
 
       <div className='flex justify-center items-center my-4 gap-4'>
-        <CircleMinus className='cursor-pointer' onClick={() =>{
-          if(quantity > 1){ setQuantity(quantity - 1);}
-        else{
-          toast.error("Quantity cannot be less than 1");
-        }}}
+        <CircleMinus className='cursor-pointer' onClick={() => {
+          if (quantity > 1) { setQuantity(quantity - 1); }
+          else {
+            toast.error("Quantity cannot be less than 1");
+          }
+        }}
         />
         <label>
           {quantity}
         </label>
-        <CirclePlus className='cursor-pointer' onClick={() =>{ 
-          if (quantity < 10){
+        <CirclePlus className='cursor-pointer' onClick={() => {
+          if (quantity < 10) {
             setQuantity(quantity + 1);
           } else {
             toast.error("Quantity cannot be more than 10");
           }
         }}
-      
+
         />
       </div>
 
 
-      <div className="flex justify-center mt-4">
-        <Button title="Add To Cart" onClick={() => toast.success(`Added ${quantity} ${name} to cart!`)}
-        />
-      </div>
+     <div className="flex justify-center mt-4">
+  <Button
+    title="Add To Cart"
+    variant='primary'
+    onClick={() => {
+      addtocart({
+        id,
+        name,
+        image,
+        description,
+        price,
+        category,
+        unit,
+        quantity,
+        totalamount : price * quantity,
+      });
+  
+    }}
+  />
+</div>
+
     </div>
   )
 }
