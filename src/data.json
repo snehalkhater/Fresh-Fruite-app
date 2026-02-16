@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Apple",
-        "image": "https://picsum.photos/seed/picsum/200/300",
+        "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce",
         "description": "Crisp and juicy red apple, perfect for snacking or baking.",
         "price": 150,
         "category": "Pome",
@@ -11,8 +11,8 @@
     {
         "id": 2,
         "name": "Banana",
-        "image": "https://picsum.photos/seed/banana/200/300",
-        "description": "Sweet and creamy bananas, ideal for smoothies and desserts.",
+        "image": "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=400",
+        "description": "Sweet and creamy bananas.",
         "price": 60,
         "category": "Tropical",
         "unit": "1 kg"
@@ -20,8 +20,8 @@
     {
         "id": 3,
         "name": "Orange",
-        "image": "https://picsum.photos/seed/orange/200/300",
-        "description": "Juicy and tangy oranges, packed with vitamin C.",
+        "image": "https://images.unsplash.com/photo-1580052614034-c55d20bfee3b",
+        "description": "Juicy oranges packed with vitamin C.",
         "price": 120,
         "category": "Citrus",
         "unit": "1 kg"
@@ -29,65 +29,56 @@
     {
         "id": 14,
         "name": "Blueberry",
-        "image": "https://picsum.photos/seed/blueberry/200/300",
-        "description": "Small and sweet blueberries, packed with antioxidants.",
+        "image": "https://images.unsplash.com/photo-1498557850523-fd3d118b962e",
+        "description": "Small and sweet blueberries.",
         "price": 320,
         "category": "Berry",
         "unit": "1 kg"
     },
-    {
-        "id": 15,
-        "name": "Raspberry",
-        "image": "https://picsum.photos/seed/raspberry/200/300",
-        "description": "Delicate and tangy raspberry, perfect for jams and desserts.",
-        "price": 350,
-        "category": "Berry",
-        "unit": "1 kg"
-    },
-    {
-        "id": 16,
-        "name": "Blackberry",
-        "image": "https://picsum.photos/seed/blackberry/200/300",
-        "description": "Juicy blackberry with a unique flavor, great for smoothies.",
-        "price": 290,
-        "category": "Berry",
-        "unit": "1 kg"
-    },
-    {
-        "id": 17,
-        "name": "Pear",
-        "image": "https://picsum.photos/seed/pear/200/300",
-        "description": "Sweet and juicy pear, excellent for poaching or eating fresh.",
-        "price": 140,
-        "category": "Pome",
-        "unit": "1 kg"
-    },
-    {
-        "id": 18,
-        "name": "Plum",
-        "image": "https://picsum.photos/seed/plum/200/300",
-        "description": "Sweet and tart plum, perfect for jams or fresh consumption.",
-        "price": 170,
-        "category": "Stone Fruit",
-        "unit": "1 kg"
-    },
-    {
-        "id": 19,
-        "name": "Apricot",
-        "image": "https://picsum.photos/seed/apricot/200/300",
-        "description": "Velvety apricot with a sweet flavor, great for drying.",
-        "price": 260,
-        "category": "Stone Fruit",
-        "unit": "1 kg"
-    },
-    {
-        "id": 20,
-        "name": "Fig",
-        "image": "https://picsum.photos/seed/fig/200/300",
-        "description": "Sweet and chewy fig, often used in Mediterranean cuisine.",
-        "price": 400,
-        "category": "Tropical",
-        "unit": "1 kg"
-       
-    }
+  {
+    
+    "id": 15,
+    "name": "Mango",
+    "image": "https://images.unsplash.com/photo-1669207334420-66d0e3450283?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuZ28lMjBmcnVpdHxlbnwwfHwwfHx8MA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "description": "Sweet and juicy king of fruits.",
+    "price": 200,
+    "category": "Tropical",
+    "unit": "1 kg"
+  },
+  {
+    "id": 16,
+    "name": "Guava",
+    "image": "https://images.unsplash.com/photo-1706734745352-c1de3bdc78e0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd1YXZhfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "description": "Fresh guava rich in vitamin C.",
+    "price": 80,
+    "category": "Tropical",
+    "unit": "1 kg"
+  },
+  {
+    "id": 17,
+    "name": "Pomegranate",
+    "image": "https://plus.unsplash.com/premium_photo-1689247946393-151eec6c0f45?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cG9tZWdyYW5hdGUlMjBmcnVpdHxlbnwwfHwwfHx8MA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "description": "Juicy red seeds full of nutrients.",
+    "price": 220,
+    "category": "Berry",
+    "unit": "1 kg"
+  },
+  {
+    "id": 18,
+    "name": "Papaya",
+    "image": "https://images.unsplash.com/photo-1541472596887-494ee5c0fe30?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&ixlib=rb-4.1.0&q=60&w=3000",
+    "description": "Sweet papaya great for digestion.",
+    "price": 60,
+    "category": "Tropical",
+    "unit": "1 kg"
+  },
+  {
+    "id": 19,
+    "name": "Chikoo",
+    "image": "https://dww3ueizok6z0.cloudfront.net/food/banner/795-9be74853804aac1abdf00a2e3a4f3cf07df28619",
+    "description": "Soft and naturally sweet fruit.",
+    "price": 120,
+    "category": "Tropical",
+    "unit": "1 kg"
+  }
 ]
