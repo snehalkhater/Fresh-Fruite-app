@@ -39,13 +39,15 @@ const FEATURES_CONFIG = [
 ];
 
 function Home() {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="bg-[#FFC4C4] min-h-screen flex flex-col">
+
       <Navbar />
 
-      <main className="flex bg-[#FFC4C4] px-6 py-16">
+      {/* ✅ MAIN WRAPPER (IMPORTANT FIX) */}
+      <main className="flex-grow pt-28 px-6 py-16">
         <div className="max-w-7xl mx-auto">
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-12">
@@ -61,14 +63,17 @@ const navigate = useNavigate();
               </h1>
 
               <div className="flex gap-4">
-                <Button title={"Call Us"} variant="primary" size="medium" />
-                <Button 
-                title={"Explore Fruits"}
-                onClick={()=>{
-                  navigate("/Fruits")
-                }}
-                 variant="tertiary" 
-                 size="medium" />
+                <Button title={"Call Us"}
+                  onClick={() => navigate("/CallUs")}
+                  variant="primary"
+                  size="medium" />
+
+                <Button
+                  title={"Explore Fruits"}
+                  onClick={() => navigate("/Fruits")}
+                  variant="tertiary"
+                  size="medium"
+                />
               </div>
             </div>
           </div>
@@ -87,6 +92,7 @@ const navigate = useNavigate();
               />
             ))}
           </div>
+
         </div>
       </main>
 

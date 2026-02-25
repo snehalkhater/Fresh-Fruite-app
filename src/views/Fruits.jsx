@@ -28,7 +28,7 @@ function Fruits() {
   return (
     <div>
       <Navbar refreshCart={refreshCart} />
-      <div className='min-h-screen'>
+      <div className=' min-h-screen'>
         <div className='m-20 flex flex-wrap justify-center'>
           {FRUITS.map((fruits) => {
             return <FruitCard key={fruits.id} {...fruits} addtocart={addtocart} />;
@@ -36,6 +36,7 @@ function Fruits() {
         </div>
       </div>
       <Toaster position="top-center" />
+      <Footer />
     </div>
   )
 }

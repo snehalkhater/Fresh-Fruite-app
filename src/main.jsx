@@ -5,6 +5,7 @@ import './index.css'
 import Home from './views/Home.jsx';
 import Fruits from './views/Fruits.jsx'
 import MYCART from './views/mycart.jsx';
+import CallUs from './views/CallUs.jsx';
 
 const root = createRoot(document.getElementById
   ("root"));
@@ -15,6 +16,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Fruits" element={<Fruits />}/>
+      <Route path="/CallUs" element={<CallUs />}/>
       <Route path="/mycart" element={<MYCART />}/>
     </Routes>
   </BrowserRouter>,
