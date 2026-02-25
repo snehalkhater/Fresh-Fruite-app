@@ -13,10 +13,10 @@ function MyCart() {
     }, []);
 
     useEffect(() => {
-        let total = 0;
-        cartItems.forEach(item => {
-            total += item.price * item.quantity;
-        });
+        const total = cartItems.reduce(
+            (sum, item) => sum + item.price * item.quantity,
+            0
+        );
         setTotalPrice(total);
     }, [cartItems]);
 

@@ -45,7 +45,7 @@ const navigate = useNavigate();
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-grow bg-[#FFC4C4] px-6 py-16">
+      <main className="flex bg-[#FFC4C4] px-6 py-16">
         <div className="max-w-7xl mx-auto">
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-12">
